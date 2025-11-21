@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Informador - Noticias</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <!-- Barra superior -->
+    <header class="navbar navbar-expand-lg navbar-light bg-white border-bottom sticky-top">
+        <div class="container-fluid d-flex flex-column">
+
+            <div class="d-flex justify-content-between align-items-center w-100">
+                <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+                    <img src="assets/logo.png" alt="Logo" class="d-flex" id="logo">
+                    <span class="fw-bold">El Informador</span>
+                </a>
+                <div class="d-flex align-items-center gap-3 text-secondary">
+                    <a href="buscar.html" class="nav-link"><i class="bi bi-search"></i></a>
+                    <a href="autor.html" class="nav-link"><i class="bi bi-person-fill"></i></a>
+                </div>
+            </div>
+            
+            <div class="w-100 align-items-left">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="collapse navbar-collapse" id="navMenu">
+                    <ul class="navbar-nav mb-2 mb-lg-0 gap-2">
+                        <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="categoria.html">Política</a></li>
+                        <li class="nav-item"><a class="nav-link" href="categoria.html">Deportes</a></li>
+                        <li class="nav-item"><a class="nav-link" href="categoria.html">Tecnología</a></li>
+                        <li class="nav-item"><a class="nav-link" href="categoria.html">Cultura</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#mas">Más</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Sección principal -->
+    <main class="container py-4">
+
+        <!-- Noticias importantes -->
+        <section class="row g-4">
+
+            <!-- Noticia Principal -->
+            <article class="col-md-6" onclick="top.location.href='articulo.html'">
+                <div class="card">
+                    <img id="imgntp" class="card-img-top" src="assets/img1_ph.jpg" alt="Noticia destacada">
+                    <div class="card-body">
+
+                        <!-- etiqueta -->
+                        <span class="badge bg-danger mb-2">Última hora</span>
+
+                        <!-- Contenido -->
+                        <h3 class="card-title">Acuerdo histórico alcanzado en cumbre internacional</h3>
+                        <p class="card-text text-muted">Los líderes mundiales logran consenso sobre temas cruciales que
+                            marcarán el futuro de las relaciones internacionales...</p>
+                        <small class="text-secondary"><i class="bi bi-clock"></i> Hace 2 horas</small>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Noticias secundarias -->
+            <aside class="col-md-6 d-flex flex-column gap-3">
+
+                <!-- Primera noticia -->
+                <div class="card p-2 d-flex flex-row"  onclick="top.location.href='articulo.html'">
+                    <img src="assets/img2_ph.jpg" class="rounded imgnts" />
+                    <div class="ps-3">
+                        <span class="badge bg-secondary mb-1">Política</span>
+                        <h6 class="fw-bold">Nuevas reformas legislativas entran en vigor</h6>
+                        <small class="text-muted"><i class="bi bi-clock"></i> Hace 3 horas</small>
+                    </div>
+                </div>
+
+                <!-- Segunda noticia -->
+                <div class="card p-2 d-flex flex-row"  onclick="top.location.href='articulo.html'">
+                    <img src="assets/img3_ph.jpg" class="rounded imgnts" />
+                    <div class="ps-3">
+                        <span class="badge bg-secondary mb-1">Deportes</span>
+                        <h6 class="fw-bold">Equipo local se corona campeón</h6>
+                        <small class="text-muted"><i class="bi bi-clock"></i> Hace 5 horas</small>
+                    </div>
+                </div>
+
+                <!-- Tercera noticia -->
+                <div class="card p-2 d-flex flex-row" onclick="top.location.href='articulo.html'">
+                    <img src="assets/img4_ph.jpg" class="rounded imgnts" />
+                    <div class="ps-3">
+                        <span class="badge bg-secondary mb-1">Tecnología</span>
+                        <h6 class="fw-bold">Se anuncia el "SITO 2", con mejoras de rendimiento</h6>
+                        <small class="text-muted"><i class="bi bi-clock"></i> Hace 7 horas</small>
+                    </div>
+                </div>
+            </aside>
+        </section>
+
+        <section class="mb-4" id="mas">
+            <!-- Últimas Noticias -->
+            <h3 class="mt-5 mb-4">Últimas Noticias</h3>
+
+            <article class="row g-4">
+                <!-- Noticias -->
+                <div class="col-md-4 d-flex"  onclick="top.location.href='articulo.html'">
+                    <div class="card shadow-sm">
+                        <img src="assets/img5_ph.jpg" class="card-img-top imgntr" alt="Noticia 1">
+                        <div class="card-body">
+                            <span class="badge bg-secondary mb-3">Cultura</span>
+                            <h5 class="card-title">Festival de cine atrae a miles</h5>
+                            <p class="card-text text-muted">El evento anual celebra lo mejor del cine independiente y
+                                alternativo.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 d-flex" onclick="top.location.href='articulo.html'">
+                    <div class="card shadow-sm">
+                        <img src="assets/img1_pa.jpg" class="card-img-top imgntr" alt="Noticia 2">
+                        <div class="card-body">
+                            <span class="badge bg-secondary mb-3">Economía</span>
+                            <h5 class="card-title">Mercados financieros cierran con ganancias</h5>
+                            <p class="card-text text-muted">Los índices bursátiles muestran un crecimiento sostenido en
+                                la última jornada.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 d-flex" onclick="top.location.href='articulo.html'">
+                    <div class="card shadow-sm">
+                        <img src="assets/img6_ph.jpg" class="card-img-top imgntr" alt="Noticia 3">
+                        <div class="card-body">
+                            <span class="badge bg-secondary mb-3">Salud</span>
+                            <h5 class="card-title">Avances médicos prometen nuevas terapias</h5>
+                            <p class="card-text text-muted">Investigaciones recientes abren la puerta a tratamientos
+                                innovadores.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 d-flex" onclick="top.location.href='articulo.html'">
+                    <div class="card shadow-sm">
+                        <img src="assets/img4_ph.jpg" class="card-img-top imgntr" alt="Noticia 4">
+                        <div class="card-body">
+                            <span class="badge bg-secondary mb-3">Tecnología</span>
+                            <h5 class="card-title">Nueva actualización mejora la seguridad</h5>
+                            <p class="card-text text-muted">Las últimas mejoras en software buscan proteger mejor a los
+                                usuarios.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 d-flex" onclick="top.location.href='articulo.html'">
+                    <div class="card shadow-sm">
+                        <img src="assets/img2_ph.jpg" class="card-img-top imgntr" alt="Noticia 5">
+                        <div class="card-body">
+                            <span class="badge bg-secondary mb-3">Medio Ambiente</span>
+                            <h5 class="card-title">Iniciativas verdes ganan terreno globalmente</h5>
+                            <p class="card-text text-muted">Proyectos sostenibles buscan mitigar el impacto ambiental.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 d-flex" onclick="top.location.href='articulo.html'">
+                    <div class="card shadow-sm">
+                        <img src="assets/img1_pa.jpg" class="card-img-top imgntr" alt="Noticia 6">
+                        <div class="card-body">
+                            <span class="badge bg-secondary mb-3">Educación</span>
+                            <h5 class="card-title">Nuevas metodologías transforman el aprendizaje</h5>
+                            <p class="card-text text-muted">Innovaciones pedagógicas buscan mejorar la experiencia
+                                educativa.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </article>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center text-lg-start border-top">
+        <div class="container p-4">
+            <div class="row">
+
+                <!-- Información del sitio -->
+                <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">El Informador</h5>
+                    <p>Noticias e información actualizada :).</p>
+                    <p>Para el remedial.</p>
+                </div>
+
+                <!-- Contacto -->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Redes sociales:</h5>
+                    <ul class="list-unstyled mb-0 mt-3">
+                        <li><a href="https://github.com/J77R-Ast" class="text-dark nav-link"><i class="bi bi-github"></i> GitHub</a></li>
+                        <li><a href="https://www.instagram.com/javi.grh" class="text-dark nav-link"><i class="bi bi-instagram"></i> Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center p-3 bg-dark text-white">
+            © 2025, hecho por Rodriguez Hernandez Javier Alejandro.
+        </div>
+    </footer>
+
+    <!-- Script de bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

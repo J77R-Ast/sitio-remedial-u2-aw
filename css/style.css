@@ -1,0 +1,33 @@
+body {
+    user-select: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+#logo {
+    width: 40px;
+    height: auto;
+    border-radius: 50%;
+}
+
+#imgntp {
+    height: calc(0.25rem * 64);
+    object-fit: cover;
+}
+
+.imgnts {
+    height: calc(0.25rem * 32);
+    width: calc(0.25rem * 48);
+    object-fit: cover;
+}
+
+.imgntr {
+    height: calc(0.25rem * 40);
+    object-fit: cover;
+}
+
+
+#navegacion {
+    justify-content: space-between;
+}
